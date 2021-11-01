@@ -14,3 +14,49 @@ footer {
 section {
   background-color: #ddd;
 }
+
+
+
+body {
+  display: grid;
+  grid-template-columns: 350px 330px 330px;
+  grid-template-rows: 100px 200px 300px 50px;
+  grid-gap: 20px;
+  margin: 0 auto;
+  max-width: 1000px;
+  grid-template-areas:
+  "masthead masthead masthead"
+  "navigation welcome welcome"
+  "navigation cats comingsoon"
+  "copyright copyright copyright";
+}
+
+header {
+  grid-area: masthead;
+}
+
+nav {
+  grid-area: navigation;
+}
+
+#welcome {
+  grid-area: welcome;
+}
+
+#cats {
+  grid-area: cats;
+}
+
+#comingsoon {
+  grid-area: comingsoon;
+}
+
+footer {
+  grid-area: copyright;
+}
+
+header {
+  margin-top: 20px;
+}
+
+/* grid-template-rows: 100px 200px 300px 50px;*/
